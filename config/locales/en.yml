@@ -1,10 +1,11 @@
 en:
   project_name: "Ecommerce 08"
-  home: "Home" 
+  home: "Home"
   help: "Help"
   about: "About"
   signin: "Sign in"
   signup: "Sign up"
+  register_error: "Register error"
   signout: "Sign out"
   forgot_password: "Forgot password"
   welcome: "Welcome"
