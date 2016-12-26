@@ -1,5 +1,5 @@
 <div role="tabpanel" class="tab-pane active text-center" id="profile">
-  <%= form_for @user do |user| %>
+  <%= form_for  [:admin, @user] do |user| %>
     <div class="form-group">
       <%= user.label :name %>
       <%= user.text_field :name, class: "form-control", required: true %>

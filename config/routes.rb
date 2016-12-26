@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   post "/signin", to: "sessions#create"
   delete "/signout", to: "sessions#destroy"
   post "/signin", to: "sessions#create"
-  resources :users
+
+  namespace :admin do
+    resources :users
+  end
 end
