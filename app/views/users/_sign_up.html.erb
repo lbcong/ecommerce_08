@@ -1,0 +1,29 @@
+<div role="tabpanel" class="tab-pane active text-center" id="profile">
+  <%= form_for @user do |user| %>
+    <div class="form-group">
+      <%= user.label :name %>
+      <%= user.text_field :name, class: "form-control", required: true %>
+    </div>
+    <div class="form-group">
+      <%= user.label :phone %>
+      <%= user.text_field :phone, class: "form-control", required: true %>
+    </div>
+    <div class="form-group">
+      <%= user.label :email %>
+      <%= user.email_field :email, class: "form-control", required: true %>
+    </div>
+    <div class="form-group">
+      <%= user.label :address %>
+      <%= user.text_field :address, class: "form-control", required: true %>
+    </div>
+    <div class="form-group">
+      <%= user.label :password %>
+      <%= user.password_field :password, class: "form-control", required: true %>
+    </div>
+    <div class="form-group" >
+      <%= user.label :password_confirmation %>
+      <%= user.password_field :password_confirmation, class: "form-control", required: true %>
+    </div>
+      <%= user.submit t("signup"), class: "btn btn-primary btn-block" %>
+  <% end %>
+</div>
