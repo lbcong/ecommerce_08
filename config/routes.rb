@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   resources :products
   resources :ratings
   resources :suggest_products
+
+  namespace :admin do
+    resources :users
+    resources :products
+  end
 end

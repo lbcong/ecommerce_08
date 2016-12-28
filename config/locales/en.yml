@@ -14,8 +14,26 @@ en:
   login_error: "Loggin failed, please try again"
   user_authen: "User Authenticate"
   previous: "Previous"
+  all_product: "All products"
+  you_sure: "You sure?"
+  product_name: "Product Name"
+  image: "Image"
+  description: "Description"
+  price: "price"
+  you_sure: "You sure ?"
+  create_product: "Crete Product"
   next: "Next"
   not_logged_in: "Please login to continue"
+  admin:
+    products:
+      create:
+        create_product_success: "Create product success"
+        create_product_fail: "Create product fail"
+      index:
+        product_not_found: "Product not found"
+      destroy:
+        product_delete: "Product Deleted"
+        product_not_found: "Product not found"
   alt:
     logo: "Logo"
     cart: "Cart"

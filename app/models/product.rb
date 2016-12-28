@@ -5,6 +5,8 @@ class Product < ApplicationRecord
   has_many :cart_items, dependent: :destroy
   has_many :comments, dependent: :destroy
 
+  mount_uploader :image, PictureUploader
+
   belongs_to :category
 
   validates :name,  presence: true, length: {maximum: Settings.maximum.name}
