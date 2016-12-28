@@ -13,6 +13,7 @@ en:
   register_error: "Register error"
   login_error: "Loggin failed, please try again"
   user_authen: "User Authenticate"
+  not_allow: "You not allow connect"
   previous: "Previous"
   admin:
     products:

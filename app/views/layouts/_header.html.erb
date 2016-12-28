@@ -30,6 +30,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if is_logged_in? %>
             <li><%= link_to t("create product"), new_admin_product_path %></li>
+            <li><%= link_to "users", admin_users_path %></li>
             <li><%= link_to t("signout"), signout_path, method: :delete,
               class: "glyphicon glyphicon-user" %>
             </li>
