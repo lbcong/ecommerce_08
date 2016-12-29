@@ -15,20 +15,21 @@ class Product < ApplicationRecord
   scope :of_ids, -> ids {where id: ids}
   scope :top_order_products, -> {order "number_of_order desc"}
   scope :top_new_products, -> {order "created_at desc"}
+  scope :find_product_order, -> {order "created_at desc"}
 
   scope :by_category, ->category_id do
     where category_id: category_id if category_id.present?
   end
 
-  scope :by_name, ->name do   
+  scope :by_name, ->name do
     where "name LIKE '%#{name}%'" if name.present?
   end
 
-  scope :by_min_price, ->min do   
+  scope :by_min_price, ->min do
     where "price >= #{min}" if min.present?
   end
 
-  scope :by_max_price, ->max do   
+  scope :by_max_price, ->max do
     where "price <= #{max}" if max.present?
   end
 
