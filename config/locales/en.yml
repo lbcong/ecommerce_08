@@ -14,6 +14,7 @@ en:
   login_error: "Loggin failed, please try again"
   user_authen: "User Authenticate"
   not_allow: "You not allow connect"
+  confirmation: "Confirmation"
   previous: "Previous"
   admin:
     products:
@@ -26,12 +27,20 @@ en:
         product_fails: "Product deleted fails"
   next: "Next"
   not_allow: "You not allow connect"
+  Profile: "Profile"
+  update_user: "Update Profile"
+  next: "Next"
+  save_change: "Save Changes"
   not_logged_in: "Please login to continue"
   alt:
     logo: "Logo"
     cart: "Cart"
   recently_viewed: " Recently Views"
   new_product: "New products"
+  users:
+    update:
+      profile_success: "Update Success"
+      profile_fails: "Update fails"
   product:
     see_detail: "See detail"
     add_to_cart: "Add to cart"
@@ -111,10 +120,10 @@ en:
     info: "Information"
     total_product: "Total products"
     total_price: "Total price"
-    name: "Receiver name: " 
-    phone: "Receiver phone: " 
+    name: "Receiver name: "
+    phone: "Receiver phone: "
     address: "Receiver address: "
-    submit: "Submit" 
+    submit: "Submit"
     created_at: "Created at: "
     status:
       status_lb: "Status"

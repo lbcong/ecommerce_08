@@ -5,7 +5,6 @@ class CreateCartItems < ActiveRecord::Migration[5.0]
       t.float :cart_price
       t.references :cart, foreign_key: true
       t.references :product, foreign_key: true
-
       t.timestamps
     end
   end
