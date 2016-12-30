@@ -28,12 +28,13 @@
           <li><%= link_to t("about"), "#" %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <% if is_logged_in? %>
+          <% if is_logged_in? && current_user.is_admin? %>
+            <li><%= link_to "suggest", admin_suggest_products_path %><li>
             <li><%= link_to t("signout"), signout_path, method: :delete,
               class: "glyphicon glyphicon-user" %>
             </li>
           <% else %>
-            <li><%= link_to t("signin"), "#", class: "glyphicon glyphicon-user", 
+            <li><%= link_to t("signin"), "#", class: "glyphicon glyphicon-user",
               remote: true, data: {toggle: "modal", target: "#login_form"} %>
             </li>
           <% end %>

@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   resources :suggest_products
   resources :carts
   resources :comments
+
+  namespace :admin do
+    resources :csv
+    resources :users
+    resources :products
+    resources :suggest_products
+  end
 end
