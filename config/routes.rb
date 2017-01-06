@@ -8,6 +8,14 @@ Rails.application.routes.draw do
   resources :ratings
   resources :suggest_products
   resources :carts
+
   resources :comments
   resources :orders
+
+  namespace :admin do
+    resources :users
+    resources :products
+    resources :suggest_products
+  end
+
 end

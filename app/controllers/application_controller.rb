@@ -9,4 +9,11 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
     end
   end
+
+  def verify_admin
+    unless current_user.is_admin?
+      flash[:danger] = t "not_allow"
+      redirect_to request.referer
+    end
+  end
 end

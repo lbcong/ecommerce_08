@@ -14,7 +14,17 @@ en:
   login_error: "Loggin failed, please try again"
   user_authen: "User Authenticate"
   previous: "Previous"
+  admin:
+    products:
+      create:
+        create_product_success: "Create product success"
+        create_product_fail: "Create product fails"
+      destroy:
+        product_not_found: "Product not found"
+        product_delete: "Product deleted"
+        product_fails: "Product deleted fails"
   next: "Next"
+  not_allow: "You not allow connect"
   not_logged_in: "Please login to continue"
   alt:
     logo: "Logo"
