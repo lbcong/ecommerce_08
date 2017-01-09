@@ -1,7 +1,7 @@
 User.create!(name: "Jang Nara",
-  email: "leductienttkt@gmail.com",
-  password: "123456",
-  password_confirmation: "123456",
+  email: "thaiphuong11dt1@gmail.com",
+  password: "111111",
+  password_confirmation: "111111",
   is_admin: true,
   address: "Quang Tri",
   phone: "01688576549"

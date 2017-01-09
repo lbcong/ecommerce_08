@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   resources :ratings
   resources :suggest_products
   resources :carts
-
   resources :comments
   resources :orders
 
@@ -17,5 +16,4 @@ Rails.application.routes.draw do
     resources :products
     resources :suggest_products
   end
-
 end
