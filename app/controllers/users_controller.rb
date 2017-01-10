@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :correct_user, only: [:edit, :update]
+
   def new
     @user = User.new
   end
@@ -21,9 +23,34 @@ class UsersController < ApplicationController
     redirect_to request.referer
   end
 
+  def edit
+  end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t ".profile_success"
+    else
+      flash[:danger] = t ".profile_fails"
+    end
+    redirect_to request.referer
+  end
+
   private
   def user_params
     params.require(:user).permit :name, :phone, :email, :address, :password,
-      :password_confirmation
+      :password_confirmation, :avatar
+  end
+
+  def correct_user
+    @user = User.find_by id: params[:id]
+    if @user.nil?
+      flash[:danger] = t "user_not_found"
+      redirect_to root_url
+    else
+      unless @user == current_user
+        flash[:danger] = t "user_not_found"
+        redirect_to root_url
+      end
+    end
   end
 end

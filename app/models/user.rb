@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  mount_uploader :avatar, PictureUploader
   has_many :recently_vieweds, dependent: :destroy
   has_many :ratings, dependent: :destroy
   has_many :orders, dependent: :destroy
