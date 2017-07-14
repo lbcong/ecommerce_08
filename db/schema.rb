@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161228071210) do
+ActiveRecord::Schema.define(version: 20161216044013) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "quantity",   default: 1
@@ -45,24 +45,24 @@ ActiveRecord::Schema.define(version: 20161228071210) do
   end
 
   create_table "order_items", force: :cascade do |t|
-    t.integer "quantity"
-    t.float "order_price"
-    t.integer "order_id"
+    t.integer  "quantity"
+    t.float    "order_price"
     t.integer  "product_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "order_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.index ["order_id"], name: "index_order_items_on_order_id"
     t.index ["product_id"], name: "index_order_items_on_product_id"
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "receiver_name"
-    t.string "receiver_address"
-    t.string "receiver_phone"
-    t.boolean "is_confirm", default: false
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "receiver_name"
+    t.string   "receiver_address"
+    t.string   "receiver_phone"
+    t.boolean  "is_confirm",       default: false
+    t.integer  "user_id"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -121,7 +121,6 @@ ActiveRecord::Schema.define(version: 20161228071210) do
     t.string   "password_digest"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
-    t.string   "avatar"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

@@ -17,15 +17,15 @@ textarea {
 }
 
 #logo {
+background-color:#ff00ff;
   float: left;
   margin-right: 10px;
-  color: #fff;
+  color:#ff00ff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 4px;
   font-weight: bold;
 }
-
 #logo:hover {
   color: #fff;
   text-decoration: none;
@@ -66,6 +66,8 @@ footer ul li {
   text-transform: uppercase;
   width: 100%;
   z-index: 999;
+background-color:#ff00ff;
+
 }
 
 .mainmenu-area ul.navbar-nav li a {
@@ -73,9 +75,10 @@ footer ul li {
   font-size: 16px;
   font-weight: 700;
   padding: 20px;
+color:#778899;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: 222}
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: 222 }
 
 .mainmenu-area .nav > li > a:focus {color: #000}
 
@@ -85,6 +88,7 @@ footer ul li {
   margin-top: 70px;
   margin-right: 70px;
   position: relative;
+
 }
 
 .cart-amunt {
@@ -298,7 +302,7 @@ footer ul li {
 .sidebar-title {
   color: #3dc6ab;
   font-size: 25px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 .single-sidebar {

@@ -6,7 +6,7 @@ class Product < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   belongs_to :category
-
+  mount_uploader :image, PictureUploader
   validates :name,  presence: true, length: {maximum: Settings.maximum.name}
   validates :price, presence: true, numericality: true
   validates :quantity, presence: true, numericality: {only_integer: true}
